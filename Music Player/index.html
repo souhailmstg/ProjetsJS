@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/891ab85888.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+
+            <!-- -------------Nav Bar -->
+            <nav class="navbar">
+                <div class="navigation-buttons">
+                    <div class="return-button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+            <!-- -------------------------- -->
+
+            <!-- --------------- Music thumb -->
+            <div class="thumnail">
+                <img id="thumbnail-image" class="thumbnail-image" src="media/thumbnail.jpg" alt="Music Thumbnail">
+            </div>
+            <div class="song-info">
+                <div id="song-title" dir="rtl">يا داك الإنسان</div>
+                <div id="song-singer">Abdelhadi Belkhayat</div>
+            </div>
+            <!-- -------------------------- -->
+
+            <!-- ---------------- Controls - -->
+            <audio id="song">
+                <source src="media/music.mp3" type="audio/mpeg"/>
+            </audio>
+            <div class="controls">
+                <input type="range" name="music-progress-indicator" class="music-progress-indicator" id="music-progress-indicator">
+
+                <div class="control-buttons">
+                    <div class="previous-song"><i class="fa-solid fa-backward"></i></div>
+                    <div class="play-pause-song" onclick="playPause()"><i class="fa-solid fa-play" id="play-pause-icon"></i></div>
+                    <div class="following-song"><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
