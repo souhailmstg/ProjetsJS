@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+main {
+  display: flex;
+  width: 320px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+main:hover {
+  transform: scale(1.02);
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.left {
+  flex: 2;
+  background-color: #fffde7; /* Jaune pâle */
+}
+
+.right {
+  flex: 1;
+  background-color: #ce93d8; /* Violet pastel */
+  color: #4a148c;
+}
+
+#date {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #f9a825; /* Jaune foncé */
+}
+
+#day {
+  font-size: 1.1rem;
+  color: #616161;
+}
+
+#month {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#year {
+  font-size: 1rem;
+  opacity: 0.9;
+}
